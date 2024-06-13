@@ -1,20 +1,22 @@
-import javax.swing.JOptionPane;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
 
-public class equipo {
-	private String nombre;
-	private jugador[] jugadores;
+public class Equipo {
 	
-	public equipo(String nombre, jugador[] jugadores) {
-		this.nombre = nombre;
-		this.jugadores = jugadores;
+	    private String nombre;
+	    private LinkedList<Jugador> jugadores;
+
+	    public Equipo(String nombre, LinkedList<Jugador> jugadores) {
+	        this.nombre = nombre;
+	        this.jugadores = jugadores;
+	    }
+
+	    public String getNombre() {
+	        return nombre;
+	    }
+
+	    public LinkedList<Jugador> getJugadores() {
+	        return jugadores;
+	    }
 	}
-	public String getNombre() {
-		return nombre;
-	}
-	public jugador[] getJugadores() {
-		return jugadores;
-	}
-}
+
 
